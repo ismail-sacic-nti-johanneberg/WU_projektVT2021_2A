@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- BootStrap -->
+    <!-- Fonts GOOGLE -->
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP (FÅR EJ ANDVÄNDAS :( )) -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
     <!-- Titeln -->
     <title>Knallefisk - Hem</title>
@@ -25,7 +22,7 @@
 
 <body>
     <!-- ***** Header***** -->
-    <header class="header header-sticky">
+    <header class="header">
         <div class="container">
             <nav class="main-nav">
 
@@ -34,16 +31,15 @@
                 <!-- ********** -->
 
                 <!-- ***** Meny knapp (mobil) ***** -->
-                <div class="container2" onclick="min_funktion(this)">
+                <div class="container2" onclick="mobileMeny(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-
                 </div>
                 <!-- **************** -->
 
                 <!-- ***** Meny ***** -->
-                <ul class="nav">
+                <ul id="nav" class="nav">
                     <li><a href="#hem" class="active">Hem</a></li>
                     <li><a href="#om-oss">Om oss</a></li>
                     <li><a href="#hitta-hit">Hitta hit</a></li>

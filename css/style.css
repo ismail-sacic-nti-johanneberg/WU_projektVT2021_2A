@@ -32,18 +32,9 @@ p {
 
 
 /*  ---------------- Header ---------------- */
-
 /*  Centrerar header Y-axel */
-.header.header-sticky {
-  min-height: 80px;
-}
-
-.header.header-sticky .nav {
-  margin-top: 20px;
-}
-
-.header.header-sticky .nav li a.active {
-  color: #ed563b;
+.header .nav li a.active {
+  color: #ed563b !important;
 }
 /*  Centrerar header Y-axel SLUT */
 
@@ -126,9 +117,50 @@ p {
     display: none;
   }
 }
+
+/*------- Nav -------*/
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+/*------- Nav Slut -------*/
+
 /*  ---------------- HEADER SLUT---------------- */
 
 
+
+/*  ---------------- Header positionera så att den sitter bra---------------- */
+@media (min-width: 576px){
+.container {
+    max-width: 540px;
+}}
+@media (min-width: 768px){
+  .container {
+      max-width: 720px;
+  }}
+@media (min-width: 992px){
+  .container {
+    max-width: 960px;
+}
+}
+@media (min-width: 1200px){
+  .container {
+      max-width: 1140px;
+  }}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*  ------------------------------------------------------------------------- */
 
 
 
@@ -260,9 +292,6 @@ p {
   }
   /*******************************************************/
 
-
-
-
  #name_title{
    font-size: 45px;
     transition: 2s;
@@ -276,8 +305,8 @@ p {
     color: #1e1e1e;
     transition:   2s;
   }
-  .header.header-sticky .nav li a:hover,
-  .header.header-sticky .nav li a.active {
+  .header .nav li a:hover,
+  .header .nav li a.active {
     color: #ed563b;
     opacity: 1;
   }
@@ -288,7 +317,7 @@ p {
     box-shadow: none;
     text-align: center;
   }
-  .header .container {
+  .header{
     padding: 0px;
   }
   .header .logo {
@@ -300,6 +329,7 @@ p {
   .header .main-nav {
     overflow: hidden;
   }
+  
   .header .main-nav .nav {
     float: none;
     width: 100%;
@@ -308,9 +338,6 @@ p {
     margin-left: 0px;
   }
 
-  .header.header-sticky .nav {
-    margin-top: 80px;
-  }
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
@@ -333,6 +360,18 @@ p {
     background: #eee ;
     color: #ed563b;
   }
+
+
+ /* ------ Nav bar drop down ------- */
+
+/* .nav_active{
+  display: flex !important;
+
+} */
+
+
+
+
 
 }
 /*  ---------------- Mobil vyn SLUT ---------------- */
