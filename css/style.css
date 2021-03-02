@@ -63,7 +63,9 @@ p {
   float: left;
   transition: all 0.3s ease 0s;
 }
-
+.logo {
+  margin-top: 5px;
+}
 .header .main-nav .logo em {
   font-style: normal;
   color: #ed563b;
@@ -292,6 +294,7 @@ p {
   }
   /*******************************************************/
 
+  
  #name_title{
    font-size: 45px;
     transition: 2s;
@@ -301,10 +304,13 @@ p {
   transition: 2s;
    font-size: 20px;
  }
+
+ /* logo */
   .header .main-nav .logo {
     color: #1e1e1e;
-    transition:   2s;
+    transition:   0.4s;
   }
+  /* ----- */
   .header .nav li a:hover,
   .header .nav li a.active {
     color: #ed563b;
@@ -330,48 +336,47 @@ p {
     overflow: hidden;
   }
   
-  .header .main-nav .nav {
-    float: none;
-    width: 100%;
-    display: none;
-    transition: all 0s ease 0s;
-    margin-left: 0px;
-  }
-
-  .header-area .main-nav .nav li {
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding-left: 0px ;
-    padding-right: 0px ;
-  }
-  .header-area .main-nav .nav li a {
-    height: 50px ;
-    line-height: 50px ;
-    padding: 0px ;
-    border: none ;
-    background: #f7f7f7 ;
-    color: #232d39 ;
-  }
-  .header-area .main-nav .nav li:last-child a {
+ .main-nav .nav li:last-child a {
     color: #fff;
   }
-  .header-area .main-nav .nav li a:hover {
+ .main-nav .nav li a:hover {
     background: #eee ;
     color: #ed563b;
   }
 
 
- /* ------ Nav bar drop down ------- */
+ /* ------ Nav bar drop down ------- */ 
 
-/* .nav_active{
-  display: flex !important;
+  .header .main-nav .nav {
+    background-color: #f7f7f7;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -5;
+    transition: 1s ease-out;
+  }
 
-} */
-
-
-
-
+  .header.main-nav .nav li {
+    width: 100%;
+    color: black !important;
+    border-bottom: 1px solid #eee;
+    padding-left: 0px ;
+    padding-right: 0px ;
+  }
+  .header .main-nav .nav li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+  
+  .nav_active{
+    top: 78px!important;
+    z-index: -1 !important;
+  }
+/* ------ Nav bar drop down SLUT ------- */ 
 
 }
 /*  ---------------- Mobil vyn SLUT ---------------- */
