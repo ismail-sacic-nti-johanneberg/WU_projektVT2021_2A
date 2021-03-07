@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Fonts GOOGLE -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
 
     <!-- BOOTSTRAP (FÅR EJ ANDVÄNDAS :( )) -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,17 +22,15 @@
         <div class="container">
             <nav class="main-nav">
 
-                <!-- ***** Logo ***** -->
-                <a href="index.html" class="logo">logo</a>
-                <!-- ********** -->
-
                 <!-- ***** Meny knapp (mobil) ***** -->
+                <div id="hidden_header" ></div>
                 <div class="container2" onclick="mobileMeny(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
                 <!-- **************** -->
+                
 
                 <!-- ***** Meny ***** -->
                 <ul id="nav" class="nav">
@@ -48,9 +42,14 @@
                 </ul>
                 <!-- ********** -->
 
+                <!-- ***** Logo ***** -->
+                <a href="index.html" class="logo" id="logo_name">Knallefisk</a>
+                <!-- ********** -->
+
             </nav>
         </div>
     </header>
+
     <!-- ********** -->
 
     <!-- ***** Banner / Videon som ska  repeteras ***** -->
@@ -61,8 +60,8 @@
 
         <div class="video_bakgrund">
             <div class="caption">
-                <h2 id="name_title">Knallefisk</h2>
-                <h6 id="content_text">Färska delikatesser från hav och sjö</h6>
+                <h2 id="name_title"><img id="logo_picture" src="/img/logo2.png" ></h2>
+                <h6 id="content_text">Färska  delikatesser  från  hav  och  sjö</h6>
                 <br>
                 <div class="besök_oss">
                     <a href="#">Besök oss</a>
