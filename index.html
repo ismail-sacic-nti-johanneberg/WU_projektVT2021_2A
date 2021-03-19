@@ -20,13 +20,13 @@
             <nav class="main-nav">
 
                 <!-- ***** Meny knapp (mobil) ***** -->
-                <div id="hidden_header" ></div>
-                <div class="container2" onclick="mobileMeny(this)">
+                <div id="hidden_header"></div>
+                <div class="container2" id="mobile_meny">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                
+
 
                 <!-- ***** Meny ***** -->
                 <ul id="nav" class="nav">
@@ -55,7 +55,7 @@
         <div class="video_bakgrund">
             <div class="caption">
                 <div id="banner_logo"><img id="logo_picture" src="img/logo_genomsynlig.png" alt="Bild på logo"></div>
-                <h6 id="content_text">Färska  delikatesser  från  hav  och  sjö</h6>
+                <h6 id="content_text">Färska delikatesser från hav och sjö</h6>
                 <br>
                 <div class="beställ">
                     <a href="#">Beställ</a>
@@ -70,26 +70,34 @@
         <div class="container">
             <div class="om_affären">
                 <div id="om_affären_text">
-                    <h1 id="om_affären_titel">Välkommen till vår fiskaffär i Knalleland.</h1>
-                    <p id="om_affären_content">Knallefisk startades år 2006 av en trevlig fiskhandlare som såg fram 
+                    <h1 id="om_affären_titel">Välkommen till vår fiskaffär i Knalleland, Borås.</h1>
+                    <p id="om_affären_content">Knallefisk startades år 2006 av en trevlig fiskhandlare som såg fram
                         emot att starta ett eget företag. Med 15 år av erfarenhet inom fiskbranchen
-                         erbjuder han och hans anställda alltid den bästa kvaliteten till det lägsta 
-                         priset. Här hittar du allt från färsk fisk till färdiga delikatesser, som hämtas direkt
-                          från GÖTBORGS FISKAUKTION.
+                        erbjuder han och hans anställda alltid den bästa kvaliteten till det lägsta
+                        priset. Här hittar du allt från färsk fisk till färdiga delikatesser, som hämtas direkt
+                        från GÖTBORGS FISKAUKTION.
                     </p>
                 </div>
                 <div id="om_affären_bild">
-                    <img id="om_affären_bild2" src="img/bild_på_affär.png" height="200px" width="100%" style="object-fit: cover;">
+                    <img id="om_affären_bild2" src="img/bild_på_affär.png" height="200px" width="100%"
+                        style="object-fit: cover;">
                 </div>
             </div>
-            <hr id="line"style="border: 0.5px solid black;margin: 40px 0px 40px 0px;">
+            <hr id="line" style="border: 0.5px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
 
         </div>
-        
+
     </section>
 
+    <!-- Kontakta oss -->
+    <Section>
+        <div class="container">
+            <div class="row" id="hours_open">
 
-
+            </div>
+            <hr id="line" style="border: 0.2px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
+        </div>
+    </Section>
 
 
     <!-- Bilder  -->
@@ -109,11 +117,12 @@
     </section>
 
 
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <p style="color: aliceblue;">Copyright © 2021 Knallefisk</p>                    
+                <p style="color: aliceblue;">Copyright © 2021 Knallefisk</p>
             </div>
         </div>
     </footer>
@@ -121,7 +130,7 @@
 
 
     <!-- Scroll to top button -->
-    <button onclick="topFunction()" id="scroll_btn" title="Gå till toppen"><i class="fa fa-arrow-up" style="font-size:35px;"></i></button>
+    <button id="scroll_btn" title="Gå till toppen"><i class="fa fa-arrow-up" style="font-size:35px;"></i></button>
 
 
     <!-- Egen Javascript -->

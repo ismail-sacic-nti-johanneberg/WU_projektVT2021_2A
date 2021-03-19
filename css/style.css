@@ -393,6 +393,15 @@ p {
 
 
 
+/* ----------- Öppettider -----------*/
+
+#hours_open{
+
+}
+/*----------------------------------- */
+
+
+
 
 /*  ---------------- FOOTER ---------------- */
 footer {
@@ -564,3 +573,19 @@ footer {
 /* Animation */
 
 /*---------------*/
+
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
