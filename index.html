@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 
     <!-- Titeln -->
     <title>Knallefisk - Hem</title>
@@ -30,11 +31,13 @@
 
                 <!-- ***** Meny ***** -->
                 <ul id="nav" class="nav">
-                    <li><a href="#hem" class="active">Hem</a></li>
-                    <li><a href="#om-oss">Om oss</a></li>
-                    <li><a href="#hitta-hit">Hitta hit</a></li>
-                    <li><a href="#sortiment">Sortiment</a></li>
-                    <li><a href="#recept">Recept</a></li>
+                    <li><a href="/index.html" class="active">Hem</a></li>
+                    <li><a href="/templates/om_oss.html">Om oss</a></li>
+                    <li><a href="/templates/hitta_butik.html">Hitta butik</a></li>
+                    <li><a href="/templates/kontakta_oss.html">Kontakta oss</a></li>
+                    <li><a href="/templates/sortiment.html">Sortiment</a></li>
+                    <li><a href="/templates/bestall_online.html">Beställ online</a></li>
+
                 </ul>
 
                 <!-- ***** Logo ***** -->
@@ -49,12 +52,12 @@
     <!-- ***** Main / Videon som ska  repeteras ***** -->
     <main class="main">
         <video autoplay muted loop id="bg-video">
-            <source src="video/havet.mp4" type="video/mp4" />
+            <source src="/video/havet.mp4" type="video/mp4" />
         </video>
 
         <div class="video_bakgrund">
             <div class="caption">
-                <div id="banner_logo"><img id="logo_picture" src="img/logo_genomsynlig.png" alt="Bild på logo"></div>
+                <div id="banner_logo"><img id="logo_picture" src="/img/logo_genomsynlig.png" alt="Bild på logo"></div>
                 <h6 id="content_text">Färska delikatesser från hav och sjö</h6>
                 <br>
                 <div class="beställ">
@@ -79,7 +82,7 @@
                     </p>
                 </div>
                 <div id="om_affären_bild">
-                    <img id="om_affären_bild2" src="img/bild_på_affär.png" height="200px" width="100%"
+                    <img id="om_affären_bild2" src="/img/bild_på_affär.png" alt="En bild som är tagen inuti fiskauktionen i Göteborgs fiskhamn" height="200px" width="100%"
                         style="object-fit: cover;">
                 </div>
             </div>
@@ -89,29 +92,124 @@
 
     </section>
 
-    <!-- Kontakta oss -->
-    <Section>
+
+
+    <!-- Öppettider -->
+    <section>
         <div class="container">
-            <div class="row" id="hours_open">
+
+            <h2 style="text-align: center;">Öppettider</h2>
+            <br>
+
+            <div class="oppettider">
+
+                <!-- Borås -->
+                <article class="boras">
+                    <h2 id="boras_title">Borås</h2>
+                    <table class="oppettider_table">
+                        <tr id="Monday">
+                            <td>Måndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Tisdag">
+                            <td>Tisdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Onsdag" >
+                            <td>Onsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Torsdag" >
+                            <td>Torsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Fredag">
+                            <td>Fredag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >19:00</td>
+                        </tr>
+                        <tr id="Lordag">
+                            <td>Lördag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >15:00</td>
+                        </tr>
+                        <tr id="Sunday" >
+                            <td>Söndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                    </table>
+                </article>
+
+                
+                <article class="skene">
+                    <h2 id="skene_title">Skene</h2>
+                    <table class="oppettider_table">
+                        <tr id="Monday" >
+                            <td>Måndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Tisdag">
+                            <td>Tisdag</td>
+                            <td style="color:red;">Stängt</td>
+
+                        </tr>
+                        <tr id="Onsdag" >
+                            <td>Onsdag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Torsdag" >
+                            <td>Torsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Fredag">
+                            <td>Fredag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >19:00</td>
+                        </tr>
+                        <tr id="Lordag">
+                            <td>Lördag</td>
+                            <td>10:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+                        <tr id="Sunday">
+                            <td>Söndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                    </table>
+                </article>
+
 
             </div>
+
             <hr id="line" style="border: 0.2px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
         </div>
-    </Section>
+    </section>
 
 
     <!-- Bilder  -->
     <section class="section" id="bilder_section">
         <div class="container">
             <div id="bilder_section_bilder">
-                <img src="img/bild1.webp" alt="Bild 1" width="24.5%" height="240px">
-                <img src="img/bild2.webp" alt="Bild 2" width="24.5%" height="240px">
-                <img src="img/bild3.webp" alt="Bild 3" width="24.5%" height="240px">
-                <img src="img/bild4.webp" alt="Bild 4" width="24.5%" height="240px">
-                <img src="img/bild5.webp" alt="Bild 5" width="24.5%" height="240px">
-                <img src="img/bild6.webp" alt="Bild 6" width="24.5%" height="240px">
-                <img src="img/bild7.webp" alt="Bild 7" width="24.5%" height="240px">
-                <img src="img/bild8.webp" alt="Bild 8" width="24.5%" height="240px">
+                <img src="/img/bild1.webp" alt="Bild 1" width="24.5%" height="240px">
+                <img src="/img/bild2.webp" alt="Bild 2" width="24.5%" height="240px">
+                <img src="/img/bild3.webp" alt="Bild 3" width="24.5%" height="240px">
+                <img src="/img/bild4.webp" alt="Bild 4" width="24.5%" height="240px">
+                <img src="/img/bild5.webp" alt="Bild 5" width="24.5%" height="240px">
+                <img src="/img/bild6.webp" alt="Bild 6" width="24.5%" height="240px">
+                <img src="/img/bild7.webp" alt="Bild 7" width="24.5%" height="240px">
+                <img src="/img/bild8.webp" alt="Bild 8" width="24.5%" height="240px">
             </div>
         </div>
     </section>
@@ -134,7 +232,7 @@
 
 
     <!-- Egen Javascript -->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

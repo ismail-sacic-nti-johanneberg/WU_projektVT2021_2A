@@ -332,8 +332,39 @@ p {
 #om_affären_bild{
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
+
+.oppettider{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.boras{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.skene{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.oppettider_table {
+  width: 90%;
+  background-color: rgb(209, 209, 209);
+  margin: auto;
+}
+.idag {
+  color: #8AC007;
+}
+.oppettider_table tr td:first-child {
+  font-weight:bold;
+}
+
+.oppettider_table tr td {
+  padding:5px;
+}
+
 @media (max-width: 770px) {
   #line{
     margin: 10px 0px 10px 0px !important;
@@ -382,7 +413,7 @@ p {
     width: 100%;
   }
   #om_affären_bild2{
-    display: none;
+    object-fit: cover;
   }
 }
 

@@ -31,3 +31,11 @@ function topFunction() {
 mybutton.addEventListener("click", topFunction)
 mobile_meny.addEventListener("click", mobileMeny)
 
+
+
+//Öppettider
+
+
+
+
+

@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <!-- Titeln -->
+    <title>Knallefisk - Kontakta oss</title>
+
+    <!-- Icon från Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
+    <!-- ***** Header***** -->
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+
+                <!-- ***** Meny knapp (mobil) ***** -->
+                <div id="hidden_header"></div>
+                <div class="container2" id="mobile_meny">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+
+                <!-- ***** Meny ***** -->
+                <ul id="nav" class="nav">
+                    <li><a href="/index.html">Hem</a></li>
+                    <li><a href="/templates/om_oss.html">Om oss</a></li>
+                    <li><a href="/templates/hitta_butik.html">Hitta butik</a></li>
+                    <li><a href="/templates/kontakta_oss.html"  class="active">Kontakta oss</a></li>
+                    <li><a href="/templates/sortiment.html">Sortiment</a></li>
+                    <li><a href="/templates/bestall_online.html">Beställ online</a></li>
+
+                </ul>
+
+                <!-- ***** Logo ***** -->
+                <a href="index.html" class="logo" id="logo_name">Knallefisk</a>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- ***** Main / Videon som ska  repeteras ***** -->
+    <main class="main">
+        <video autoplay muted loop id="bg-video">
+            <source src="/video/havet.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video_bakgrund">
+            <div class="caption">
+                <div id="banner_logo"><img id="logo_picture" src="/img/logo_genomsynlig.png" alt="Bild på logo"></div>
+                <h6 id="content_text">Färska delikatesser från hav och sjö</h6>
+                <br>
+                <div class="beställ">
+                    <a href="#">Beställ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Lite om affären  (Section)-->
+    <section>
+        <div class="container">
+            <div class="om_affären">
+                <div id="om_affären_text">
+                    <h1 id="om_affären_titel">Välkommen till vår fiskaffär i Knalleland, Borås.</h1>
+                    <p id="om_affären_content">Knallefisk startades år 2006 av en trevlig fiskhandlare som såg fram
+                        emot att starta ett eget företag. Med 15 år av erfarenhet inom fiskbranchen
+                        erbjuder han och hans anställda alltid den bästa kvaliteten till det lägsta
+                        priset. Här hittar du allt från färsk fisk till färdiga delikatesser, som hämtas direkt
+                        från GÖTBORGS FISKAUKTION.
+                    </p>
+                </div>
+                <div id="om_affären_bild">
+                    <img id="om_affären_bild2" src="/img/bild_på_affär.png" height="200px" width="100%"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <hr id="line" style="border: 0.5px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
+
+        </div>
+
+    </section>
+
+    <!-- Kontakta oss -->
+    <Section>
+        <div class="container">
+            <div class="row" id="hours_open">
+
+            </div>
+            <hr id="line" style="border: 0.2px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
+        </div>
+    </Section>
+
+
+    <!-- Bilder  -->
+    <section class="section" id="bilder_section">
+        <div class="container">
+            <div id="bilder_section_bilder">
+                <img src="/img/bild1.webp" alt="Bild 1" width="24.5%" height="240px">
+                <img src="/img/bild2.webp" alt="Bild 2" width="24.5%" height="240px">
+                <img src="/img/bild3.webp" alt="Bild 3" width="24.5%" height="240px">
+                <img src="/img/bild4.webp" alt="Bild 4" width="24.5%" height="240px">
+                <img src="/img/bild5.webp" alt="Bild 5" width="24.5%" height="240px">
+                <img src="/img/bild6.webp" alt="Bild 6" width="24.5%" height="240px">
+                <img src="/img/bild7.webp" alt="Bild 7" width="24.5%" height="240px">
+                <img src="/img/bild8.webp" alt="Bild 8" width="24.5%" height="240px">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <p style="color: aliceblue;">Copyright © 2021 Knallefisk</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scroll to top button -->
+    <button id="scroll_btn" title="Gå till toppen"><i class="fa fa-arrow-up" style="font-size:35px;"></i></button>
+
+
+    <!-- Egen Javascript -->
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
