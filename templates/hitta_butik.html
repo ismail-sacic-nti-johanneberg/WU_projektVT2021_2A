@@ -17,7 +17,7 @@
 
 <body>
     <!-- ***** Header***** -->
-    <header class="header">
+    <header class="header" style="background-color: #2d3950;">
         <div class="container">
             <nav class="main-nav">
 
@@ -36,7 +36,6 @@
                     <li><a href="/templates/om_oss.html">Om oss</a></li>
                     <li><a href="/templates/hitta_butik.html" class="active">Hitta butik</a></li>
                     <li><a href="/templates/kontakta_oss.html">Kontakta oss</a></li>
-                    <li><a href="/templates/sortiment.html">Sortiment</a></li>
                     <li><a href="/templates/bestall_online.html">Beställ online</a></li>
 
                 </ul>
@@ -50,77 +49,109 @@
 
 
 
-    <!-- ***** Main / Videon som ska  repeteras ***** -->
-    <main class="main">
-        <video autoplay muted loop id="bg-video">
-            <source src="/video/havet.mp4" type="video/mp4" />
-        </video>
-
-        <div class="video_bakgrund">
-            <div class="caption">
-                <div id="banner_logo"><img id="logo_picture" src="/img/logo_genomsynlig.png" alt="Bild på logo"></div>
-                <h6 id="content_text">Färska delikatesser från hav och sjö</h6>
-                <br>
-                <div class="beställ">
-                    <a href="#">Beställ</a>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <!-- Lite om affären  (Section)-->
-    <section>
+    <!-- Öppettider -->
+    <section  style="margin-top: 90px;">
         <div class="container">
-            <div class="om_affären">
-                <div id="om_affären_text">
-                    <h1 id="om_affären_titel">Välkommen till vår fiskaffär i Knalleland, Borås.</h1>
-                    <p id="om_affären_content">Knallefisk startades år 2006 av en trevlig fiskhandlare som såg fram
-                        emot att starta ett eget företag. Med 15 år av erfarenhet inom fiskbranchen
-                        erbjuder han och hans anställda alltid den bästa kvaliteten till det lägsta
-                        priset. Här hittar du allt från färsk fisk till färdiga delikatesser, som hämtas direkt
-                        från GÖTBORGS FISKAUKTION.
-                    </p>
-                </div>
-                <div id="om_affären_bild">
-                    <img id="om_affären_bild2" src="/img/bild_på_affär.png" height="200px" width="100%"
-                        style="object-fit: cover;">
-                </div>
+            <div class="oppettider">
+
+                <!-- Borås -->
+                <article class="boras">
+                    <h2 id="boras_title">Borås</h2>
+                    <table class="oppettider_table">
+                        <tr id="Monday">
+                            <td>Måndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Tisdag">
+                            <td>Tisdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Onsdag" >
+                            <td>Onsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Torsdag" >
+                            <td>Torsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Fredag">
+                            <td>Fredag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >19:00</td>
+                        </tr>
+                        <tr id="Lordag">
+                            <td>Lördag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >15:00</td>
+                        </tr>
+                        <tr id="Sunday" >
+                            <td>Söndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                    </table>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.0512317216635!2d12.933504154929423!3d57.73170229381581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465aa7204c244b79%3A0x1d516f3454bd77dd!2sKnalle%20Fisk!5e0!3m2!1ssv!2sse!4v1616927781991!5m2!1ssv!2sse" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+                    <p>(Utanför Willys)</p>
+
+                </article>
+                <hr id="line_mobile" style="border: 0.2px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
+                
+                <article class="skene">
+                    <h2 id="skene_title">Skene</h2>
+                    <table class="oppettider_table">
+                        <tr id="Monday" >
+                            <td>Måndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Tisdag">
+                            <td>Tisdag</td>
+                            <td style="color:red;">Stängt</td>
+
+                        </tr>
+                        <tr id="Onsdag" >
+                            <td>Onsdag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                        <tr id="Torsdag" >
+                            <td>Torsdag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >18:00</td>
+                        </tr>
+                        <tr id="Fredag">
+                            <td>Fredag</td>
+                            <td >10:00</td>
+                            <td>-</td>
+                            <td >19:00</td>
+                        </tr>
+                        <tr id="Lordag">
+                            <td>Lördag</td>
+                            <td>10:00</td>
+                            <td>-</td>
+                            <td>15:00</td>
+                        </tr>
+                        <tr id="Sunday">
+                            <td>Söndag</td>
+                            <td style="color:red;">Stängt</td>
+                        </tr>
+                    </table>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d536.1399295316546!2d12.648629588819013!3d57.48583409881686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46501a6cd0ac7bad%3A0x5982afa13da43f8c!2sWillys!5e0!3m2!1ssv!2sse!4v1616927881448!5m2!1ssv!2sse" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>(Utanför Willys)</p>
+                </article>
+
+
             </div>
-            <hr id="line" style="border: 0.5px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
 
+            <br><br><br><br>
         </div>
-
     </section>
-
-    <!-- Kontakta oss -->
-    <Section>
-        <div class="container">
-            <div class="row" id="hours_open">
-
-            </div>
-            <hr id="line" style="border: 0.2px solid rgb(56, 56, 56);margin: 20px 0px 20px 0px;">
-        </div>
-    </Section>
-
-
-    <!-- Bilder  -->
-    <section class="section" id="bilder_section">
-        <div class="container">
-            <div id="bilder_section_bilder">
-                <img src="/img/bild1.webp" alt="Bild 1" width="24.5%" height="240px">
-                <img src="/img/bild2.webp" alt="Bild 2" width="24.5%" height="240px">
-                <img src="/img/bild3.webp" alt="Bild 3" width="24.5%" height="240px">
-                <img src="/img/bild4.webp" alt="Bild 4" width="24.5%" height="240px">
-                <img src="/img/bild5.webp" alt="Bild 5" width="24.5%" height="240px">
-                <img src="/img/bild6.webp" alt="Bild 6" width="24.5%" height="240px">
-                <img src="/img/bild7.webp" alt="Bild 7" width="24.5%" height="240px">
-                <img src="/img/bild8.webp" alt="Bild 8" width="24.5%" height="240px">
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Footer -->
     <footer>
