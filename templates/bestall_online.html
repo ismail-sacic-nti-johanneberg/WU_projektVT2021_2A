@@ -47,34 +47,41 @@
     </header>
 
 
-    <article style="margin-top:100px">
+    <div style="margin-top:100px">
         <div class="container">
-            <div class="grid-kontakta-oss">
-                <div class="kontakta-oss-text">KONTAKTA OSS</div>
 
-                <div class="email">
-                    <i id="spel" class="fas fa-envelope fa-3x"></i>
-                    <p>Email</p>
-                    <p id="beskrivning">rsacic@yahoo.se<br>almir.hamza@hotmail.com </p>
+            <div id="form">
+                <div class="fisk" id="fisk"></div>
+                <div class="fisk" id="fisk2"></div>
+                
+                <form id="bestall_online_form"  >
+                    
+                    <div class="formgroup" id="name-form">
+                        <label for="name">Namn*</label>
+                        <input type="text" id="name" name="name" />
+                    </div>
+                    
+                    <div class="formgroup" id="date-form">
+                        <label for="date">Datum <span style="font-size:0.5em">(När vill du hämta din beställning)</span>*</label>
+                        <input type="date" id="date" name="date" />
+                    </div>     
+
+                    <div class="formgroup" id="number-form">
+                        <label for="number">Telefonnummer*</label>
+                        <input type="number" id="number" name="number" />
+                    </div>
+                    
+                    <div class="formgroup" id="message-form">
+                        <label for="message">Beställning / beskrivning*</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                        <input type="submit" value="Beställ" />
+                </form>
                 </div>
-
-                <div class="nummer">
-                    <i class="fas fa-mobile-alt fa-3x"></i>
-                    <p>Nummer</p>
-                    <p id="beskrivning">073 535 09 17<br>070 836 59 71</p>
-
-                </div>
-
-                <div class="plats">
-                    <i class="fas fa-map-marker-alt fa-3x"></i>
-                    <p>Plats</p>
-                    <p id="beskrivning">Ålgårdsvägen 3, 506 30 Borås<br>Örbyvägen 27, 511 61 Skene</p>
-                </div>
-
-              </div>
               <br><br>
         </div>
-    </article>
+    </div>
 
 
     <!-- Footer -->
@@ -94,6 +101,7 @@
 
     <!-- Egen Javascript -->
     <script src="/js/script.js"></script>
+    <script src="/js/bestall_online.js"></script>
 </body>
 
 </html>
