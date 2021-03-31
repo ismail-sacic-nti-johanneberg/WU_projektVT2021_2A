@@ -620,6 +620,57 @@ footer {
 
 
 
+/*  ---------------- Om oss ---------------- */
+
+#om_oss_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "bild_banner bild_banner bild_banner bild_banner"
+      "Text Text Text Text"
+      "bild1 bild2 bild3 bild4";
+  }
+  
+@media (max-width: 726px) {
+  #om_oss_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "bild_banner bild_banner"
+      "Text Text"
+      "bild1 bild2 "
+      "bild3 bild4";
+      ;
+  }
+}
+  
+  .bild_banner { grid-area: bild_banner;
+    -webkit-box-shadow: -1px 1px 39px -11px rgba(0,0,0,0.73);
+    -moz-box-shadow: -1px 1px 39px -11px rgba(0,0,0,0.73);
+    box-shadow: -1px 1px 39px -11px rgba(0,0,0,0.73); }
+  
+  .Text { grid-area: Text; margin-bottom: 15px; }
+  
+  .bild1 { grid-area: bild1; }
+  
+  .bild2 { grid-area: bild2; }
+  
+  .bild3 { grid-area: bild3; }
+  
+  .bild4 { grid-area: bild4; }
+  
+
+
+
+/*  ---------------- Om oss  SLUT ---------------- */
+
+
 
 
 
