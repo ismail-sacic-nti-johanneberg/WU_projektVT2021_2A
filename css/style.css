@@ -665,7 +665,10 @@ footer {
   
   .bild4 { grid-area: bild4; }
   
-
+  .bild1,.bild2,.bild3,.bild4{ margin:10px;    
+    -webkit-box-shadow: -1px 1px 14px -3px rgba(0,0,0,0.73);
+    -moz-box-shadow: -1px 1px 14px -3px rgba(0,0,0,0.73);
+    box-shadow: -1px 1px 14px -3px rgba(0,0,0,0.73);   }
 
 
 /*  ---------------- Om oss  SLUT ---------------- */
