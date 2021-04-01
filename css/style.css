@@ -8,6 +8,8 @@
 }
 /*  -------------------------------------------------------- */
 
+/*  ---------------- CSS som jag kommer andvänd för varje sida ---------------- */
+
 html {
   width: 100%;
   height: 100%;
@@ -16,7 +18,6 @@ html {
   overflow-x: hidden;
 }
 
-/*  ---------------- CSS som jag kommer andvänd för varje sida ---------------- */
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -37,25 +38,6 @@ p {
 
 
 
-/*  Scrolla till toppen knapp */
-#scroll_btn {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index:99;
-  font-size: 18px;
-  background-color: rgb(124, 124, 124);
-  color: white;
-  cursor: pointer;
-  padding: 15px 18px;
-  border-radius: 4px;
-}
-
-#scroll_btn:hover {
-  background-color: #555;
-}
-/* --------------------------- */
 
 
 
@@ -168,7 +150,7 @@ p {
 
 
 
-/*  ---------------- Header positionera så att den sitter bra---------------- */
+/*  ---------------- Container ändras beroneds på breden (Gör lite space från kanterna av skärmen till body)---------------- */
 @media (min-width: 576px){
 .container {
     max-width: 540px;
@@ -314,38 +296,7 @@ p {
 
 
 
-/*  ---------------- Section ---------------- */
-.om_affären{
-  margin: 5% 0% 5% 0%;
-  display: flex;
-  flex-wrap: wrap;
-}
-#om_affären_text{
-  flex: 0 0 66.666666%;
-  max-width: 66.666666%;
-  padding: 5px 10px;
-}
-#om_affären_titel{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  margin-bottom: 8px;
-
-}
-#om_affären_content{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 5px;
-  font-weight: 600;
-  color: #555555;
-  font-size: 19px;
-}
-#om_affären_bild{
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-  padding: 10px 10px;
-}
-
+/*  ---------------- Section / Öpptetider ---------------- */
 .oppettider{
   display: flex;
   flex-wrap: wrap;
@@ -472,7 +423,7 @@ footer {
 
 
 
-/*  ---------------- Mobil vyn ---------------- */
+/*  ---------------- Mobil vyn (Generellt) ---------------- */
 /* Header för mobilen */
 @media (max-width: 770px) {
 
@@ -511,7 +462,6 @@ footer {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
-  /*******************************************************/
 
   
  #banner_logo{
@@ -620,7 +570,7 @@ footer {
 
 
 
-/*  ---------------- Om oss ---------------- */
+/*  ---------------- Om oss sidan ---------------- */
 
 #om_oss_grid{
     display: grid;
@@ -671,10 +621,10 @@ footer {
     box-shadow: -1px 1px 14px -3px rgba(0,0,0,0.73);   }
 
 
-/*  ---------------- Om oss  SLUT ---------------- */
+/*  ---------------- Om oss sidan  SLUT ---------------- */
 
 
-/*  ---------------- Kontakta oss ---------------- */
+/*  ---------------- Kontakta oss sidan ---------------- */
 .grid-kontakta-oss {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -740,12 +690,11 @@ footer {
 }
 
 
-/*  ---------------- Kontakta oss  SLUT ---------------- */
+/*  ---------------- Kontakta oss  sidan SLUT ---------------- */
 
 
-/*  ---------------- Beställ online ---------------- */
+/*  ---------------- Beställ online  sidan ---------------- */
 
-/*  -------------- Fisk animation (Lärt mig från youtube)----------------- */
 @import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
 .fisk{
@@ -868,8 +817,9 @@ label{
 
 
 
-/* Animation */
 
+/* Animation */
+/*  -------------- Fisk animation (Lärt mig från youtube)----------------- */
 @-webkit-keyframes myfirst
 {
 	0% {margin-left: -235px}
@@ -883,9 +833,7 @@ label{
 	70% {margin-left: 100%;}
 	100% {margin-left: 100%;}
 }
-
 /*---------------*/
-
 
 
 
@@ -904,3 +852,25 @@ label{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+/* --------------------------- */
+
+
+
+/*  Scrolla till toppen knapp  */
+#scroll_btn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index:99;
+  font-size: 18px;
+  background-color: rgb(124, 124, 124);
+  color: white;
+  cursor: pointer;
+  padding: 15px 18px;
+  border-radius: 4px;
+}
+#scroll_btn:hover {
+  background-color: #555;
+}
+/* --------------------------- */
