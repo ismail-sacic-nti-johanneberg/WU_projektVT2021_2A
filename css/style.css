@@ -695,7 +695,6 @@ footer {
 
 /*  ---------------- Beställ online  sidan ---------------- */
 
-@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
 
 .fisk{
 	background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
@@ -704,11 +703,8 @@ footer {
 	margin-left: -235px;
 	position: absolute;	
 	animation: myfirst 24s;
-	-webkit-animation: myfirst 24s;
 	animation-iteration-count: infinite;
-	-webkit-animation-iteration-count: infinite;
 	animation-timing-function: linear;
-	-webkit-animation-timing-function: linear;
 }
 
 #fisk{
@@ -810,13 +806,6 @@ label{
 
 /* Animation */
 /*  -------------- Fisk animation (Lärt mig från youtube)----------------- */
-@-webkit-keyframes myfirst
-{
-	0% {margin-left: -235px}
-	90% {margin-left: 100%;}
-	100% {margin-left: 100%;}
-}
-
 @keyframes myfirst
 {
 	0% {margin-left: -235px}
