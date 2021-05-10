@@ -12,6 +12,14 @@
 
     <!-- Icon från Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_BRI0okdJxJ2JORycpKEt0");
+    })();
+    </script>
+
 </head>
 
 <body>
@@ -54,10 +62,10 @@
                 <div class="fisk" id="fisk"></div>
                 <div class="fisk" id="fisk2"></div>
                 
-                <form id="bestall_online_form"  >
+                <form id="bestall_online_form" >
                     
                     <div class="formgroup" id="name-form">
-                        <label for="name">Namn*</label>
+                        <label for="name">Namn och efternamn*</label>
                         <input type="text" id="name" name="name" />
                     </div>
                     
@@ -101,6 +109,8 @@
 
     <!-- Egen Javascript -->
     <script src="./js/script.js"></script>
+    <script src="./js/bestall.js"></script>
+
 </body>
 
 </html>
