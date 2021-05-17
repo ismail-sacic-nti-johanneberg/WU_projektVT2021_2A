@@ -211,6 +211,7 @@ p {
 #banner_logo{
   position: relative;
   margin-bottom: 20px;
+  margin-top:40px;
 }
 
 #bg-video {
@@ -382,7 +383,6 @@ p {
 
 #bilder_section {
   padding: 40px 0px 40px 0px;
-  background-image: url(img/havet.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
