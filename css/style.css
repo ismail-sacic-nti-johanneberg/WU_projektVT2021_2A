@@ -201,6 +201,7 @@ p {
 /*  ---------------- Main ---------------- */
 #logo_picture{
   width: 440px;
+  margin-top: 30px;
   height: 280px;
   animation: logo_move 1s infinite;
   }
